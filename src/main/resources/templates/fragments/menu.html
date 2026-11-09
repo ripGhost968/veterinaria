@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="menu" class="navbar navbar-expand-lg navbar-dark clinic-navbar sticky-top"><div class="container"><a class="navbar-brand d-flex align-items-center gap-2" th:href="@{/}"><span class="brand-paw" aria-hidden="true">🐾</span><span>Clínica Veterinária</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="menuPrincipal"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1"><li class="nav-item"><a class="nav-link" th:href="@{/}">Início</a></li><li class="nav-item"><a class="nav-link" th:href="@{/sobre}">Sobre</a></li><li class="nav-item"><a class="nav-link" th:href="@{/servicos}">Serviços</a></li><li class="nav-item"><a class="nav-link" th:href="@{/agendamentos}">Agendamentos</a></li><li class="nav-item"><a class="nav-link" th:href="@{/login}">Entrar</a></li><li class="nav-item"><form th:action="@{/logout}" method="post"><button type="submit" class="btn btn-sm btn-nav-logout">Sair</button></form></li></ul></div></div></nav>
+</body>
+</html>
